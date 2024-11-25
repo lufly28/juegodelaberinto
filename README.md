@@ -1,3 +1,3 @@
 # Juego del Laberinto
 Esta repo, muestra un proyecto centrado en el lenguaje Javascript.
-Visualizacion: 
+Visualizacion: https://lufly28.github.io/juegodelaberinto/
