@@ -1,0 +1,18 @@
+body {
+    background-color: #000; /* Fondo negro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+canvas {
+    background-color: #fff; /* Fondo del canvas blanco */
+    border: 1px solid #000; /* Borde negro para mejor visualización */
+}
+
+p{
+    color: #fff;
+}
+/* Estilos adicionales para los laberintos (ajustar según tu código) */
