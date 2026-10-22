@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Juego del Laberinto</title>
 </head>
 <body>
     
-    <p id="mensaje">Encuentra la salida para ganar: </p>
-    <canvas width="600" height="600" id="miLaberinto"></canvas>
-    <script src="index.js"></script>
+    <div class="game-container">
+        <h1>Juego del Laberinto</h1>
+        <p id="mensaje">Encuentra la salida para ganar</p>
+        
+        <div class="canvas-wrapper">
+            <canvas width="600" height="600" id="miLaberinto"></canvas>
+            
+            <!-- Ventana flotante de victoria -->
+            <div id="win-modal" class="hidden">
+                <h2>¡Felicidades!</h2>
+                <p>Has encontrado la salida.</p>
+                <button id="restart-btn">Jugar de nuevo</button>
+            </div>
+        </div>
 
+        <!-- Controles táctiles (Solo visibles en móvil) -->
+        <div class="mobile-controls">
+            <button id="btn-up" class="control-btn">⬆️</button>
+            <div class="horizontal-controls">
+                <button id="btn-left" class="control-btn">⬅️</button>
+                <button id="btn-down" class="control-btn">⬇️</button>
+                <button id="btn-right" class="control-btn">➡️</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
